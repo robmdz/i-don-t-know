@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">PIXEL</h1>
+
+        <h2 class="subtitulo">Elige tu mascota:</h2>
+
+        <div id = "contenedorTarjetas" class="tarjetas"> 
+           
+        </div>
+        <p>
+            <button id="boton-mascota">Seleccionar</button>
+        </p>
+        
+    </section>
+    <section id= "ver-mapa" >
+        <h2 class="subtitulo">MUNDO DE PIXEL</h2>
+        <canvas id="mapa"></canvas>
+        <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo4()">Arriba</button>
+        <div>
+            <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo3()">Izquierda</button>
+            <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo2()">Abajo</button>
+            <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo()">Derecha</button>
+        </div>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">PIXEL</h1>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+     
+        <div id="contenedorAtaques" class="tarjetasataques">
+        </div>  
+
+            <div id="Mensajes">
+                <p id="resultadomensaje"> LA GUERRA ESTA POR INICIAR...</p>
+                <section id="reiniciar">
+                    <button id="seleccionar-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataquejugador">
+                    <p id="vidasJugador">0</p>
+                    <p id="mascotaJugador"></p>
+                    <div id="ataquesdemimascota"></div>
+                </div>
+                <div class="ataquerival">
+                    <p id="vidasRival">0</p>
+                    <p id="mascotaRival"></p>
+                    <div id="ataquesdelamascotarival"></div>
+                </div>
+            </div>
+            <script src="./mokepon.js"></script>
+</body>
+</html>
