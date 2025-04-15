@@ -24,11 +24,11 @@
     <section id= "ver-mapa" >
         <h2 class="subtitulo">MUNDO DE PIXEL</h2>
         <canvas id="mapa"></canvas>
-        <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo4()">Arriba</button>
+        <button ontouchstart="moverCapipepo4()" ontouchend="detenerMovimiento()" onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo4()">Arriba</button>
         <div>
-            <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo3()">Izquierda</button>
-            <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo2()">Abajo</button>
-            <button onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo()">Derecha</button>
+            <button ontouchstart="moverCapipepo3()" ontouchend="detenerMovimiento()" onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo3()">Izquierda</button>
+            <button ontouchstart="moverCapipepo2()" ontouchend="detenerMovimiento()" onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo2()">Abajo</button>
+            <button ontouchstart="moverCapipepo()" ontouchend="detenerMovimiento()" onmouseout="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverCapipepo()">Derecha</button>
         </div>
     </section>
 

@@ -153,7 +153,7 @@ unirseAlJuego()
 }
 
 function unirseAlJuego(){
-    fetch("http://localhost:8080/unirse")
+    fetch("http://work.local:8080/unirse")
         .then(function(res) {
             if (res.ok){
                 res.text()
@@ -190,7 +190,7 @@ function seleccionarMascota(){
 }
 
 function seleccionarMokepon(mascotaJugador){
-    fetch(`http://localhost:8080/mokepon/${jugadorId}`, {
+    fetch(`http://work.local:8080/mokepon/${jugadorId}`, {
         method: "post",
         headers: {
             "content-type": "application/json"
@@ -252,7 +252,7 @@ function secuenciaAtaques(){
 }
 
 function enviarAtaques(){
-    fetch(`http://localhost:8080/mokepon/${jugadorId}/ataques`, {
+    fetch(`http://work.local:8080/mokepon/${jugadorId}/ataques`, {
         method: "post",
         headers: {
             "content-type": "application/json"
@@ -265,7 +265,7 @@ function enviarAtaques(){
 }
 
 function obtenerAtaques(){
-    fetch(`http://localhost:8080/mokepon/${enemigoId}/ataques`)
+    fetch(`http://work.local:8080/mokepon/${enemigoId}/ataques`)
         .then(function(res){
             if (res.ok){
                 res.json()
@@ -342,7 +342,7 @@ function pintarCanvas(){
 }
 
 function enviarPosicion(x, y){
-    fetch(`http://localhost:8080/mokepon/${jugadorId}/posicion`, {
+    fetch(`http://work.local:8080/mokepon/${jugadorId}/posicion`, {
         method: "post",
         headers: {
             "content-type": "application/json"
